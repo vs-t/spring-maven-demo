@@ -1,6 +1,6 @@
-name: Java CI
+name: e2e_pipeline
 
-on: [push]
+on:[push]
 
 jobs:
   build:
@@ -15,4 +15,6 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn package --file pom.xml
+    - name: Maven install
+      run: mvn install
 

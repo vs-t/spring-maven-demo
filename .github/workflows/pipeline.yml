@@ -17,4 +17,6 @@ jobs:
       run: mvn package --file pom.xml
     - name: Maven install
       run: mvn install
+    - name: Maven Deploy
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/vs-t -Dtoken=5d27adba383eb824fbd9e83142dc1341528f16b1
 

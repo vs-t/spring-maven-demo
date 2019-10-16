@@ -1,6 +1,6 @@
 name: e2e_pipeline
 
-on:[push]
+on: [push]
 
 jobs:
   build:
